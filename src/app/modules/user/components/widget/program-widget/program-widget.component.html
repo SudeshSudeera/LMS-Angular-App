@@ -1,0 +1,16 @@
+<div class="box">
+    <h1 class="program-name">
+        {{name}}
+    </h1>
+    
+    <h3 class="cost">25000 LKR</h3>
+  
+    <span class="start-date">{{startDate | date:'MMMM d, y'}}</span>
+  
+  
+    <div class="lang-outer">
+        <div class="lang" *ngFor="let temp of languages">{{temp?.name}}</div>
+    </div>
+  
+  </div>
+  
