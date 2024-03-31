@@ -19,4 +19,8 @@ export class cookieService {
     return '';
   }
 
+  public create(token:any) {
+    this._cookieService.set('token', token, 10, '/')
+  }
+
 }
